@@ -1,62 +1,68 @@
 <!DOCTYPE html>
 <html>
-    <head> </head>
+    <head>
+    	<link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet"> 
+    	<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet"> 
+    	<link href="blog.css" rel="stylesheet" type='text/css'>
+    </head>
     <body>
-        <nav>
-            <ul>
-                <li> <a href='index.html'> Home </a> </li>
+        <nav id='navbar'>
+            <ul class='bg-dark'>
+                <li class='nav-item'> <a href='index.html'> Home </a> </li>
             </ul>
         </nav>
-        <h1> Each Blog Post Needs a Main Title Statement</h1>
+        <h1 class='title'> Each Blog Post Needs a Main Title Statement</h1>
 
-        <img src='images/title.jpg'>
-        <small>a subtitle for image here</small>
-
+        <img class='img-fluid' src='images/title.jpg'>
+        <small class='subtitle'>a subtitle for image here</small>
+    <div class='container'>
         <h3>Intro</h3>
-        <p>
+        <p class = 'bg-white outline'>
             This is a paragraph that defines what this blog post is all about. 
             It serves as the thesis statement for a blog post.
         </p>
 
-        <h3>Overview</h3>
+    <div class ='bg-dark'>
+        <h3 id='overview'>Overview</h3>
         <ul>
             <li >Point #1 </li>
             <li> Point #2 </li>
             <li> Point #3 </li>
         </ul>
+    </div>
 
-        <img src="images/image1.jpg">
-        <h3>part 1</h3>
-        <p>
+        <img class='center border' src="images/image1.jpg">
+        <h3 class='text-green'>part 1</h3>
+        <p class = 'bg-green'>
             This is the first part of your blog post. 
             It may provide some foundational information necessary for later parts.
         </p>
 
-        <img src="images/image2.jpg">
-        <h3>part 2</h3>
-        <p>
+        <img class='center' src="images/image2.jpg">
+        <h3 class='text-blue'>part 2</h3>
+        <p class = 'bg-blue'>
             This is the next part of the blog posts.
             It follows from the previous part.
         </p>
 
-        <img src="images/image3.png">
-        <h3>part 3</h3>
-        <p> 
+        <img class='center' src="images/image3.png">
+        <h3 class='text-red'>part 3</h3>
+        <p class = 'bg-red'> 
             This part continues the blog posts from the previous paragraph
             Each paragraph has its own message or point. 
         </p>
 
-        <img src="images/image4.jpg">
+        <img class='center' src="images/image4.jpg">
         <h3>Conclusion</h3>
-        <p>
+        <p class = 'bg-yellow'>
              This is the final conclusion thoughts of the Blog posts.
         </p>
 
         <hr>
-
+    </div>
         <h3> About me </h3>
-        <img src='images/profile.png'>
-        <h4> Kenny Le </h4>
+        <img class='thumbnail' src='images/profile.png'>
+        <h4 id='my-name'> Kenny Le </h4>
         <span>This is info about me</span>
     </body>
 </html>
