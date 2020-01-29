@@ -2,6 +2,7 @@
 <html>
 	<head> 
 		<title> My Portfolio </title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	</head>
 	<body>
 		<nav id ="top-navbar">
@@ -14,19 +15,21 @@
 				<li>	<a href="#section-contact"> Contact </a>	</li>
 			</ul> 
 		</nav>
-		<section id ="section-showcase">
-			<div>
+
+		<section id ="section-showcase" class='jumbotron'>
+			<div class='container-fluid'>
 				<h1> Awesome Title </h1>
 				<p> it's pretty cool </p>
 			</div> 
 		</section>
-		<aside id ="sidebar">
+		<aside id ="sidebar" class='bg-dark'>
 			<div>
 				<h3> News: </h3>
 				<p> This is a place for some placeholder text. </p> 
 			</div>
 		</aside>
-		<section id ="section-home">
+
+		<section id ="section-home" class='bg-danger p-1 container-fluid'>
 			<h1> Welcome </h1>
 			<hr>
 			<p>
@@ -35,20 +38,24 @@
 				comments here.
 			</p> 
 		</section>
-		<section id ="section-about">
+
+		<section id ="section-about" class='bg-primary pb-1 container-fluid'>
 			<h1> About </h1>
 			<hr>
-			<div>
-				<img src="images/profile.png"> 
+
+			<div class='row'>
+				<div class='col-lg-2 col-sm-4'>
+					<img src="images/profile.png" class='img-fluid'>
+				</div> 
+				<div class='col-lg-10 col-sm-8'>
+					<h4> Kenny Le </h4>
+					<p> A computer science student.</p>
+				</div>
 			</div>
-			<div>
-				<h4> Kenny Le </h4>
-				<p> A computer science student.</p>
-			</div>
-			<table>
+			<table class='table mt-4'>
 				<thead>
 					<tr>
-						<th colspan='2'> Technical Skills </th>
+						<th colspan='2' class='text-center'> Technical Skills </th>
 					</tr> 
 				</thead>
 				<tbody>
@@ -75,46 +82,75 @@
 				</tbody>
 			</table>
 		</section>
-		<section id ="section-projects"> 
+
+		<section id ="section-projects" class='bg-success container-fluid'> 
 			<h1> Projects </h1>
 			<hr>
 			<p> Summary of all the projects you have worked on </p>
-			<div>
-				<div id = "projects">
-					<a href = '#' target="_blank">
-						<div>
-							<p> Project </p>
+			<div class='container'>
+				<div id = "projects" class='card-deck text-center'>
+					
+					<a class='card bg-dark btn' href = '#' target="_blank">
+						<div class='card-header'>
+							<p class='text-light'> Project </p>
 						</div>
-						<img src = 'images/logo.png'>
-						<div>
-							<h4> Project Name </h4>
+						<img class='card-img-top' src = 'images/logo.png'>
+						<div class='card-body'>
+							<h4 class='card-title text-light'> Project Name </h4>
 						</div>
-						<div>
-							<small> by Kenny Le </small>
+						<div class='card-footer'>
+							<small class='text-muted'> by Kenny Le </small>
 						</div>
 					</a>
+
+					<a class='card bg-dark btn' href = '#' target="_blank">
+						<div class='card-header'>
+							<p class='text-light'> Project </p>
+						</div>
+					<img class='card-img-top' src = 'images/logo.png'>
+						<div class='card-body'>
+							<h4 class='card-title text-light'> Project Name </h4>
+						</div>
+						<div class='card-footer'>
+							<small class='text-muted'> by Kenny Le </small>
+						</div>
+					</a>
+					
+					<a class='card bg-dark btn' href = '#' target="_blank">
+						<div class='card-header'>
+							<p class='text-light'> Project </p>
+						</div>
+					<img class='card-img-top' src = 'images/logo.png'>
+						<div class='card-body'>
+							<h4 class='card-title text-light'> Project Name </h4>
+						</div>
+						<div class='card-footer'>
+							<small class='text-muted'> by Kenny Le </small>
+						</div>
+					</a>
+					
 				</div> 
 			</div>
 		</section>
-		<section id ="section-blog">
+		<section id ="section-blog" class='bg-warning pb-1 container-fluid'>
 			<h1> Blog </h1>
 			<hr>
 			<p> Explain what your blog will be about. </p>
 			<hr>
-			<article>
+			<article class='container'>
 				<h3> Topic 1 </h3>
-				<small> Posted by me.name on this.date </small>
+				<small> Posted by Kenny Le on this.date </small>
 				<p> Summary of this blog post </p>
-				<a href="post.html"> Read More </a>
+				<a class='btn btn-outline-dark' href="post.html"> Read More </a>
 				<hr>
 			</article>
 		</section>
-		<section id ="section-contact">
+		<section id ="section-contact" class='bg-secondary container-fluid'>
 			<h1> Contact </h1>
 			<hr>
 			<h4> Send message </h4>
 			<form>
-				<div>
+				<div class='form-group'>
 					<input type="text" name="name" placeholder="Your Name">
 				</div>
 				<div>
@@ -130,10 +166,13 @@
 				<button type = "submit"> Submit </button>
 			</form>
 		</section>
-		<footer>
+		<footer class='footer bg-light'>
 			<div>
 				<p> Copyright &copy; 2020 Kenny Le </p>
 			</div> 
 		</footer>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	</body>
 </html>
