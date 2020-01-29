@@ -1,29 +1,67 @@
 <!DOCTYPE html>
 <html>
 	<head> 
-		<title> My Portfolio </title>
+		<title> Kenny's Portfolio </title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<style>
+			section:before{
+				height: 54px;
+				content: "";
+				display: block;
+			}
+			section{
+				min-height: 100vh;
+			}
+			#section-showcase{
+				background-image: url(./images/stars.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			html{
+				scroll-behavior:smooth; /* Works on chrome and not edge :( */
+			}
+		</style>
 	</head>
 	<body>
-		<nav id ="top-navbar">
-			<a href ="#section-showcase"> <strong> Kenny's Portfolio </strong> </a>
-			<ul>
-				<li>	<a href="#section-home"> Home </a>	</li>
-				<li>	<a href="#section-about"> About </a>	</li>
-				<li>	<a href="#section-projects"> Projects </a>	</li>
-				<li>	<a href="#section-blog"> Blog </a>	</li>
-				<li>	<a href="#section-contact"> Contact </a>	</li>
-			</ul> 
+		<nav id ="top-navbar" class='navbar fixed-top navbar-expand-lg navbar-dark bg-dark'>
+			<a class='navbar-brand' href ="#section-showcase"> <strong> Kenny's Portfolio </strong> </a>
+			<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#menu'>
+				<span class='navbar-toggler-icon'></span>
+			</button>
+			<div class='collapse navbar-collapse' id='menu'>
+				<ul class='nav navbar-nav ml-auto'>
+					<li class='nav-item'>	
+						<a class='nav-link'href="#section-home"> Home </a>	
+					</li>
+				
+					<li class='nav-item'>	
+						<a class='nav-link'href="#section-about"> About </a>	
+					</li>
+				
+					<li class='nav-item'>	
+						<a class='nav-link'href="#section-projects"> Projects </a>	
+					</li>
+				
+					<li class='nav-item'>	
+						<a class='nav-link'href="#section-blog"> Blog </a>	
+					</li>
+				
+					<li class='nav-item'>	
+						<a class='nav-link'href="#section-contact"> Contact </a>	
+					</li>
+				</ul> 
+			</div>
 		</nav>
 
-		<section id ="section-showcase" class='jumbotron'>
-			<div class='container-fluid'>
+		<section id ="section-showcase" class='jumbotron d-flex align-items-center'>
+			<div class='container-fluid text-center text-light'>
 				<h1> Awesome Title </h1>
 				<p> it's pretty cool </p>
 			</div> 
 		</section>
+
 		<aside id ="sidebar" class='bg-dark'>
-			<div>
+			<div class='bg-dark text-light float-right col-4 pt-4 mt-5'>
 				<h3> News: </h3>
 				<p> This is a place for some placeholder text. </p> 
 			</div>
@@ -135,12 +173,12 @@
 		<section id ="section-blog" class='bg-warning pb-1 container-fluid'>
 			<h1> Blog </h1>
 			<hr>
-			<p> Explain what your blog will be about. </p>
+			<p> My experience of a computer science mentor at the University of New Orleans </p>
 			<hr>
 			<article class='container'>
 				<h3> Topic 1 </h3>
-				<small> Posted by Kenny Le on this.date </small>
-				<p> Summary of this blog post </p>
+				<small> Posted by Kenny Le on January 25, 2020 </small>
+				<p> My first experience of mentoring students after being assigned a mentor on the previous semester</p>
 				<a class='btn btn-outline-dark' href="post.html"> Read More </a>
 				<hr>
 			</article>
@@ -151,23 +189,23 @@
 			<h4> Send message </h4>
 			<form>
 				<div class='form-group'>
-					<input type="text" name="name" placeholder="Your Name">
+					<input class='form-control' type="text" name="name" placeholder="Your Name">
 				</div>
-				<div>
-					<input type="email" name="email" placeholder="Your Email">
+				<div class='form-group'>
+					<input class='form-control'type="email" name="email" placeholder="Your Email">
 				</div>
-				<div>
-					<input type="subject" name="subject" placeholder="Subject">
+				<div class='form-group'>
+					<input class='form-control'type="subject" name="subject" placeholder="Subject">
 				</div>
-				<div>
-					<textarea rows = "4" id = "message" placeholder="Message">
+				<div class='form-group'>
+					<textarea class='form-control'rows = "4" id = "message" placeholder="Message">
 					</textarea>
 				</div>
-				<button type = "submit"> Submit </button>
+				<button class='btn btn-lg btn-primary' type = "submit"> Submit </button>
 			</form>
 		</section>
 		<footer class='footer bg-light'>
-			<div>
+			<div class='container text-muted text-center'>
 				<p> Copyright &copy; 2020 Kenny Le </p>
 			</div> 
 		</footer>
