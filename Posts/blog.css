@@ -1,183 +1,25 @@
-/* Classes */
-.bg-white
-{
-	background-color: white;
+h1{
+	font-size: 3vw; 
+	font-family: 'Cherry Swash', cursive;
+}
+p{
+	margin-right: 5vw; 
+	margin-left: 5vw;
+	font-size: 1.25vw;
+	font-family: 'Sriracha', cursive;
+}
+img {
+	display: block; 
+	margin-right: auto; 
+	margin-left: auto; 
+	width: 50%;
+	opacity: 0.75;
 }
 
-.bg-green
-{
-	background-color: green;
-}
-
-.bg-red
-{
-	background-color: red;
-}
-
-.bg-blue
-{
-	background-color: cyan;
-}
-
-.bg-yellow
-{
-	background-color: yellow;
-}
-
-.navbg-dark
-{
-	background-color: black;
-	opacity: 0.2;
-}
-.navbg-dark:hover
-{
+img:hover {
 	opacity: 1.0;
 }
-.bg-dark
-{
-	background-color: black;
-	color: white;
-}
-.text-red
-{
-	color: red;
-}
-
-.text-blue
-{
-	color: cyan;
-}
-
-.text-green
-{
-	color: green;
-}
-.text-white
-{
-	color: white;
-}
-.outline
-{
-	outline-width: 2px;
-	outline-style: solid;
-	padding: 5px;
-}
-
-.img-fluid
-{
-	max-width: 100%;
-	max-height: 100%;
-}
-
-.center
-{
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-	display: block;
-}
-
-.border
-{
-	border-style: solid;
-	border-width: 5px;
-}
-
-.thumbnail
-{
-	float: left;
-	border: 1px solid #ddd; /* Gray border */
-	border-radius: 4px; /* Rounded border */
-	padding: 5px; /* Some padding */
-	width: 150px; /* Set a small width */
-	margin-right: 10px;
-}
-
-#my-name{
-	color: blue;
-	font-size: x-large;
-}
-
-.container
-{
-	width: 80%;
-	margin: auto;
-}
-
-.nav-item
-{
-	all: unset;
-}
-
-.title
-{
-	font-family: 'BioRhyme',serif;
-	color:white;
-	font-size: 60px;
-	text-align: center;
-	padding-top: 1em;
-}
-
-#navbar
-{
-	display: block;
-	text-align: right;
-	position: fixed;
-	top: -1em;
-	width: 100%;
-}
-#overview
-{
-	text-align: center;
-	padding-top: 1em;
-}
-
-/* Other Stuff */
-body
-{
-	background-image: url('post_images/giphy.gif');
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-ul
-{
-	background: white;
-	padding: 30px;
-}
-ul li
-{
-	background: #333;
-	margin: 10px;
-	border: 20px solid #333;
-	text-align: center;
-}
-
-hr
-{
-	border: 2px solid #ffffff;
-	border-radius: 3px;
-	border-width: medium;
-}
-
-a
-{
-	text-decoration: none;
-	color: #fff;
-	font-family: Ariel, Helvetica, sans-serif;
-	font-weight: bold;
-}
-
-a:hover
-{
-	color:cyan;
-}
-p
-{
-	font-size: large;
-	font-family: 'Ubuntu', sans-serif;
-}
-h3{
-	font-size: x-large;
-	font-family: 'Cherry Swash', cursive;
+a{
+	font-family: 'Sriracha', cursive; 
+	font-size: 1.25vw;
 }
