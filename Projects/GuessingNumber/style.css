@@ -1,21 +1,26 @@
 h1
 {
+	width: 100vw;
+	border: 15px solid blue;
 	font-family: 'Spartan';
 	font-size: 3vw;
 	text-align: center;
 	position: fixed;
 	top: 3vw;
-	left: 20vw;
+	color: black;
+	background-color: white;
 } 
 h2
 {
+	width: 8vw;
+	border: 10px solid black;
 	position: fixed;
-	top: 8vw;
+	top: 12vw;
 	left: 4vw;
 	font-size: 2vw;
 	font-family: 'Spartan';
 	color: rgb(232,162,232);
-
+	background-color: white;
 } 
 img
 {
@@ -45,7 +50,7 @@ p
 	transition: 0.4s;
 	position: fixed;
 	left: 20vw;
-	top: 10vw;
+	top: 14vw;
 }
 .button1:hover
 {
@@ -65,7 +70,7 @@ p
 	transition: 0.4s;
 	position: fixed;
 	left: 46vw;
-	top: 10vw;
+	top: 14vw;
 }
 .button2:hover 
 {
@@ -85,7 +90,7 @@ p
 	transition: 0.4s;
 	position: fixed;
 	right: 17vw;
-	top: 10vw;
+	top: 14vw;
 }
 .button3:hover 
 {
@@ -95,8 +100,8 @@ p
 }
 .speech-bubble {
 	position: fixed;
-	background: #14d8fa;
-	top: 10vw;
+	background: white;
+	top: 15vw;
 }
 
 .speech-bubble:after {
@@ -107,7 +112,7 @@ p
 	width: 2;
 	height: 2;
 	border: 1vw solid transparent;
-	border-top-color: #14d8fa;
+	border-top-color: white;
 	border-bottom: 2vw;
 	border-left: 0;
 	margin-left: 1vw;
