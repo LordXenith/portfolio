@@ -1,7 +1,7 @@
 h1
 {
 	width: 100vw;
-	border: 15px solid blue;
+	border: 10px solid white;
 	font-family: 'Spartan';
 	font-size: 3vw;
 	text-align: center;
@@ -13,14 +13,12 @@ h1
 h2
 {
 	width: 8vw;
-	border: 10px solid black;
 	position: fixed;
-	top: 12vw;
+	top: 9vw;
 	left: 4vw;
 	font-size: 2vw;
 	font-family: 'Spartan';
-	color: rgb(232,162,232);
-	background-color: white;
+	color: blue;
 } 
 img
 {
@@ -101,7 +99,8 @@ p
 .speech-bubble {
 	position: fixed;
 	background: white;
-	top: 15vw;
+	top: 12vw;
+	left: 12vw;
 }
 
 .speech-bubble:after {

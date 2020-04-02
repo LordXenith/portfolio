@@ -13,11 +13,6 @@ img {
 	margin-right: auto; 
 	margin-left: auto; 
 	width: 50%;
-	opacity: 0.75;
-}
-
-img:hover {
-	opacity: 1.0;
 }
 a{
 	font-family: 'Sriracha', cursive; 
