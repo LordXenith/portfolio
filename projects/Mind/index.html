@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<title> Allina the Mind Reader </title>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+body 
+{
+  background-image: url('images/Allina/background.png');
+} 
+</style>
+<body>
+	<h1> Allina the Mind Reader </h1>
+	<h2> Allina </h2>
+
+	<img id="person" src="images/Allina/base.gif" height="500" width="500">
+	<button class="button button1" id='yes'> Yes, that is correct. </button>
+	<button class="button button2" id='low' onclick="change()"> No, lower. </button>
+	<button class="button button3" id='high' onclick="change()"> No, higher. </button>
+	<p id="guess" class='speech-bubble'> Is your number 500?
+	<script src="scripts/views.js"> </script>
+	<script src="scripts/model.js"> </script>
+	<script src="scripts/controllers.js"> </script>	
+</body>
+</html>
